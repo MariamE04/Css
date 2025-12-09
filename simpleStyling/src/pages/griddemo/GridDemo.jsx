@@ -1,36 +1,42 @@
 import styles from "./grid.module.css";
 
+import TopRow from "./gridDemoStyling/topRow";
+import TopColumn from "./gridDemoStyling/TopColumn";
+
+import BottomRow from "./gridDemoStyling/BottomRow";
+import BottomColumn from "./BottomColumn";
+
+import LeftMenu from "./gridDemoStyling/leftMenu";
+import RightContent from "./gridDemoStyling/RightContent";
+import Footer from "./gridDemoStyling/Footer";
+
 const GridDemo = () => {
   return (
     <div className={styles.container}>
-      {/* Top row */}
-      <div className={styles.topRow}>
-        <div className={styles.topDiv1}>Top Left</div>
-        <div className={styles.topDiv2}>Top Right</div>
-      </div>
 
-      {/* Bottom row */}
-      <div className={styles.bottomRow}>
-        <div className={styles.leftMenu}>
-          <ul>
-            <li>Menu 1</li>
-            <li>Menu 2</li>
-            <li>Menu 3</li>
-          </ul>
-        </div>
-        <div className={styles.rightContent}>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            imperdiet libero id nisi euismod, sed porta est consectetur. Morbi
-            sed odio massa.
-          </p>
-          <p>
-            More content here. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Donec hendrerit vehicula est, in consequat.
-          </p>
-        </div>
-        <div className={styles.footer}>Footer Area</div>
-      </div>
+      {/* TOP ROW */}
+      <TopRow>
+        <TopColumn styleClass={styles.topDiv1}>Top Left</TopColumn>
+        <TopColumn styleClass={styles.topDiv2}>Top Right</TopColumn>
+      </TopRow>
+
+      {/* BOTTOM ROW */}
+      <BottomRow>
+
+        <BottomColumn styleClass={styles.leftMenu}>
+          <LeftMenu />
+        </BottomColumn>
+
+        <BottomColumn styleClass={styles.rightContent}>
+          <RightContent />
+        </BottomColumn>
+
+        <BottomColumn styleClass={styles.footer}>
+          <Footer />
+        </BottomColumn>
+
+      </BottomRow>
+
     </div>
   );
 };
