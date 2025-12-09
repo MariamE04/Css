@@ -1,0 +1,39 @@
+.loginContainer {
+  display: flex;   
+  justify-content: flex-end;
+  height: auto;
+  gap: 10px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.loginForm input {
+  padding: 5px; 
+  font-size: 0.9rem;
+}
+
+.loginForm button {
+  background-color: #237fdc;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.loginForm button:hover {
+  background-color: #237fdc;
+}
+
+.loggedIn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.loggedIn button {
+  background-color: #444;
+  color: white;
+  padding: 5px 10px;
+}

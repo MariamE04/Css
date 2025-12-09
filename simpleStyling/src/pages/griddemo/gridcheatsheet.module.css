@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  grid-template-rows: 80px 80px 80px;    /* 3 rows of 80px */
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+.item {
+  background-color: #4caf50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.item2 {
+  background-color: #ff9800;
+}
+
+.item3 {
+  background-color: #2196f3;
+}
+
+/* Example of spanning multiple columns */
+.span2 {
+  grid-column: span 2;
+}
+
+/* Example of spanning multiple rows */
+.span2row {
+  grid-row: span 2;
+}

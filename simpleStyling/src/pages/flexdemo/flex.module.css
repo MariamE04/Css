@@ -1,0 +1,50 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.topRow1, .topRow2 {
+  display: flex;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.topRow1 {
+  height: 50px;
+  background-color: #4caf50;
+}
+
+.topRow2 {
+  height: 20px;
+  background-color: #ff9800;
+}
+
+.bottomRow {
+  display: flex;
+  width: 100%;
+  gap: 10px; /* spacing between left/right */
+}
+
+.leftMenu {
+  flex: 1; /* left menu takes 1 part */
+  background-color: #2196f3;
+  color: white;
+  padding: 10px;
+}
+
+.leftMenu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.rightContent {
+  flex: 4; /* right content takes 4 parts */
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+}
